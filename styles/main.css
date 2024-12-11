@@ -1,0 +1,40 @@
+main {
+    border: 20px solid var(--shape-background);
+    border-radius: 0px 12px 12px 12px;
+    background-color: var(--shape-body);
+    width: 51.25rem;
+    height: 134.375rem;
+    margin-top: 16.813rem;
+}
+
+h1 {
+    color: var(--text-heading);
+    font: var(--heading-md);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--text-heading);
+    font: var(--heading-sm);
+    margin: 0;
+}
+
+#text-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 5rem 8.125rem 8.125rem;
+}
+
+.calendar-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.calendar-div {
+    display: flex;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
