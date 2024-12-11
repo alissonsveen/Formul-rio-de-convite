@@ -47,12 +47,12 @@ label {
     }
 
     .icon.presencial {
-        background: url(/assets/icons/building-2.svg);
+        background: url(../../assets/icons/building-2.svg);
         background-size: cover;
     }
 
     .icon.online {
-        background: url(/assets/icons/video.svg);
+        background: url(../../assets/icons/video.svg);
         background-size: cover;
     }
 
@@ -78,13 +78,13 @@ label {
     input[type="radio"]:checked + .icon.presencial {
         background-color: var(--shape-button);
         font: var(--open-sans);
-        background: url(/assets/icons/building-2\ hover.svg); 
+        background: url(../../assets/icons/building-2\ hover.svg); 
     }
 
     input[type="radio"]:checked + .icon.online {
         background-color: var(--shape-button);
         font: var(--open-sans);
-        background: url(/assets/icons/video\ hover.svg);
+        background: url(../../assets/icons/video\ hover.svg);
     }
 }
 
