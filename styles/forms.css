@@ -1,0 +1,18 @@
+@import url(fields/index.css);
+form {
+    max-width: 600px;
+    margin: 20px auto 0; 
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    position: relative; 
+    top: -8.125rem; 
+}
+
+
+fieldset  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: none;
+    margin-left: 2.5rem;
+}
