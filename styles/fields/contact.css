@@ -1,0 +1,114 @@
+.contact-icon-h1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 8px;
+    top: 50px;
+    margin-top: 14px;
+
+    & img {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        top: 33px;
+        left: 5px;
+    }
+
+    & h1 {
+        position: relative;
+        left: 40px;
+        color: var(--text-heading);
+        font: var(--heading-sm);
+    }
+}
+
+.contact-wrapper {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.contact-wrapper input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 16px 16px;
+    box-sizing: border-box;
+
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &:valid + .error-nome {
+        display: none; 
+    }
+
+    &:focus:valid + .error-nome {
+        display: none; 
+    }
+}
+
+.contact-wrapper label {
+    display: flex;
+    padding-bottom: 12px;
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.contact-wrapper .error-nome {
+    display: none; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 8px; 
+    margin-top: 4px; 
+}
+
+.contact-wrapper input:invalid + .error-nome {
+    display: flex; 
+    
+}
+
+.contact-wrapper .error-nome img {
+    width: 16px; 
+    height: 16px;
+}
+
+.contact-wrapper .error-nome span {
+    color: var(--danger);
+    font: var(--body-xs);
+    line-height: 1; 
+}
+
+.email-wrapper,
+.tel-wrapper {
+    width: 48%; 
+    position: relative;
+    top: 20px;
+}
+
+.email-wrapper,
+.tel-wrapper {
+    display: flex;
+    flex-direction: column; 
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between; 
+    gap: 16px;
+}
+
+.email-wrapper input,
+.tel-wrapper input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 16px;
+    box-sizing: border-box;
+}

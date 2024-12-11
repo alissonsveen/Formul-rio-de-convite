@@ -1,0 +1,90 @@
+.tipo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+label {
+    font: var(--body);
+    color: var(--text-body);
+}
+
+.button-style {
+    width: 17.1rem;
+    gap: 1rem;
+
+    display: grid;
+    align-items: center;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    background-color: var(--input-base);
+
+    grid-template-columns: 20fr 20fr; 
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.25rem;
+    position: relative;
+
+    font: 400 0.875rem var(--open-sans);
+    color: var(--text-body);
+    z-index: 1;
+    background-color: transparent; 
+
+    cursor: pointer;
+
+    
+    .icon {
+        width: 1rem;
+        height: 1rem;
+        margin-block: 0.75rem;
+        margin-left: 1.125rem;
+        background-size: cover;
+    }
+
+    .icon.presencial {
+        background: url(/assets/icons/building-2.svg);
+        background-size: cover;
+    }
+
+    .icon.online {
+        background: url(/assets/icons/video.svg);
+        background-size: cover;
+    }
+
+    
+    input[type="radio"] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &:hover {
+        background-color: var(--shape-button);
+    }
+
+    &:has(input:checked){
+        background-color: var(--shape-button);
+        width: 7.625rem;
+        font: var(--open-sans);
+        color: var(--text-heading); }
+        
+    input[type="radio"]:checked + .icon.presencial {
+        background-color: var(--shape-button);
+        font: var(--open-sans);
+        background: url(/assets/icons/building-2\ hover.svg); 
+    }
+
+    input[type="radio"]:checked + .icon.online {
+        background-color: var(--shape-button);
+        font: var(--open-sans);
+        background: url(/assets/icons/video\ hover.svg);
+    }
+}
+

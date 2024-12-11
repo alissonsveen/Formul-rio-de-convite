@@ -1,0 +1,38 @@
+.inicio-wrapper {
+    display: flex;
+    gap: 16px; 
+}
+
+.inicio-wrapper > div {
+    display: flex;
+    flex-direction: column; 
+    width: 50%; 
+    
+}
+
+.inicio-wrapper label {
+    font: var(--body-sm); 
+    color: var(--text-body);
+    margin-bottom: 8px; 
+}
+
+.inicio-wrapper input {
+    width: 100%; 
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 16px;
+    box-sizing: border-box;
+
+    
+}
+.inicio-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; 
+}
+
+.inicio-wrapper input[type="date"] {
+    -webkit-appearance: none; 
+    appearance: none; 
+}
+

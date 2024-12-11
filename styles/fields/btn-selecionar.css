@@ -1,0 +1,126 @@
+.btn-on-off-upload {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 125px;
+    top: 50px;
+    left: -120px;
+    
+}
+
+#p-btn {
+    color: var(--text-body);
+    font: var(--body-md);
+    position: relative;
+    bottom: 12px;
+    left: 5px;
+}
+
+
+.button-wrapper span {
+    display: grid;
+    justify-content: right;
+    position: relative;
+    bottom: 25px;
+    left: 55px;
+    font: var(--body-sm);
+    
+}
+
+input[type="checkbox"].btn-on-off {
+    display: flex;
+    width: 64px;
+    height: 32px;
+    background: #1C1F21;
+    border: 1px solid #363B40;
+    border-radius: 999px;
+    box-sizing: border-box;
+    appearance: none; 
+    cursor: pointer;
+    background-image: url(../../assets/icons/btn-off.svg);
+    background-repeat: no-repeat;
+    background-position: 2px;
+    outline: none;
+    transition: background-color 0.3s ease, background-position 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="checkbox"].btn-on-off:checked {
+    background-color: var(--brand-light);
+    background-image: url(../../assets/icons/btn-on.svg);
+    background-repeat: no-repeat;
+    background-position: 35px;
+    box-shadow: 0 0 4px var black;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 8px;
+    width: 119px;
+    height: 40px;
+    background: #2D3136;
+    border-radius: 8px;
+    position: relative; 
+    cursor: pointer; 
+
+    & span {
+        position: relative;
+        left: 20px;
+    }
+}
+
+.upload input {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    cursor: pointer; 
+}
+
+.upload label {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    pointer-events: none; 
+}
+
+.upload span {
+    display: flex;
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    white-space: nowrap;
+}
+
+.error {
+    display: none; 
+    align-items: center;
+    gap: 5px;
+    font: var(--body-xs);
+    color: var(--danger);
+    margin-top: 5px;
+}
+
+.upload input:invalid ~ .error {
+    display: flex;
+}
+
+.upload input:valid ~ .error {
+    display: none;
+}
+
+input[type="checkbox"].btn-on-off + .on-off::after {
+    content: "Escuro";
+    margin-left: -42px;
+    position: relative;
+    color: var(--text-body);
+    font: var(--body-sm);
+}
+
+input[type="checkbox"].btn-on-off:checked + .on-off::after {
+    content: "Claro";
+    position: relative;
+    margin-left: -49px;
+    color: var(--text-heading);
+}

@@ -1,0 +1,26 @@
+.local-wrapper {
+    width: 100%; 
+}
+
+.local-wrapper input {
+    width: 48.5%;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 16px 16px; 
+    box-sizing: border-box;
+    bottom: 101px;
+    left: 290px;
+}
+
+.local-wrapper label {
+    position: relative;
+    bottom: 6.25rem;
+    left: 18.438rem;
+    display: flex;
+    padding-bottom: 12px;
+    font: var(--body-sm);
+    color: var(--text-body);
+}
